@@ -9,7 +9,7 @@ export default function Counter() {
 
   return (
     <div className= "bg-white-200 flex flex-col items-center justify-center h-screen">
-    <div className="flex flex-col items-center justify-center bg-purple-500 p-4 m-4 rounded-xl">
+    <div className="flex flex-col items-center justify-center bg-purple-500 p-10  rounded-xl">
       <input
         type="text"
         value={title}
@@ -17,7 +17,7 @@ export default function Counter() {
         placeholder="Enter document title"
         className="border p-2 mb-4"
       />
-      <p className="text-4xl  text-red-600 underline ">{title || ' Counter'}</p>
+      <p className="text-4xl  text-red-600 underline ">{title || ' Counter App'}</p>
 
       <h2 className="text-white mt-4 text-4xl">Count: {count}</h2>
       <button onClick={() => setCount(count + 1)} className="bg-blue-500 text-white px-3 py-1 m-3  text-3xl rounded-xl">Increment</button>
